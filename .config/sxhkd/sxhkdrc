@@ -1,10 +1,4 @@
-#
 # wm independent hotkeys
-#
-
-# terminal emulator
-super + Return
-	kitty
 
 # terminal emulator
 super +	Return 
@@ -13,10 +7,10 @@ super +	Return
 #rofi launch
 super + space
 	rofi -show run
+
 #firefox 
 super + f
 	firefox
-
 
 # make sxhkd reload its configuration files:
 super + Escape
@@ -126,21 +120,8 @@ super + alt + shift + {h,j,k,l}
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
-# --| Cropped Save |-- #
-super + u
-   sh ~/.scripts/screenshot.sh -s save -m select
+#Screenshot(Full)
+ctrl + p
+	scrot -d1 && mv *.png ~/Pictures/Screenshots/
 
-# --| Fullscreen Save |--#
-super + shift + u
-    sh ~/.scripts/screenshot.sh -s save -m full
-
-# --| Clipboard cropped |-- #
-super + p
-    sh ~/.scripts/screenshot.sh -s clip -m select
-
-# --| Clipboard Fullscreen |-- #
-super + shift + p
-     sh ~/.scripts/screenshot.sh -s clip -m full
-
-super + s  
-      sh ~/.scripts/screenshot.sh
+	
