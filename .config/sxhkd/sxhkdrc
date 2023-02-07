@@ -1,7 +1,7 @@
 # wm independent hotkeys
 
 # terminal emulator
-super +	Return 
+super + Return
 	kitty
 
 #rofi launch
