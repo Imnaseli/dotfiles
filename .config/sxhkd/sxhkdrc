@@ -125,18 +125,22 @@ super + alt + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+
 # --| Cropped Save |-- #
 super + u
-   sh ~/.scripts/notification/screenshot.sh -s save -m select
+   sh ~/.scripts/screenshot.sh -s save -m select
 
 # --| Fullscreen Save |--#
 super + shift + u
-    sh ~/.scripts/notification/screenshot.sh -s save -m full
+    sh ~/.scripts/screenshot.sh -s save -m full
 
 # --| Clipboard cropped |-- #
 super + p
-    sh ~/.scripts/notification/screenshot.sh -s clip -m select
+    sh ~/.scripts/screenshot.sh -s clip -m select
 
 # --| Clipboard Fullscreen |-- #
 super + shift + p
-     sh ~/.scripts/notification/screenshot.sh -s clip -m full
+     sh ~/.scripts/screenshot.sh -s clip -m full
+
+super + s  
+      sh ~/.scripts/screenshot.sh
