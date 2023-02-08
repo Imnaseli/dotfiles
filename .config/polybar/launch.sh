@@ -4,14 +4,12 @@
 # Terminate already running bar instances
 killall -q polybar
 
-int=$(iwgetid | getn 1)
+#int=$(iwgetid | getn 1)
+int=$(iwgetid)
 echo ${int}
 
-sed -i "s/interface = .*/interface = \"$int\"/g" ~/.config/polybar/config
+sed -i "s/interface = .*/interface = \"$int\"/g" ~/.config/polybar/config.ini
 
-
-# Launch bar1 and bar2
 polybar white &
-#polybar bar2 &
 
 echo "Bars launched..."

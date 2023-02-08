@@ -1,0 +1,3 @@
+you switched the names
+config.conf
+themes.conf
