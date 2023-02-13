@@ -10,11 +10,17 @@ xsetroot -cursor_name left_ptr &
 bspc monitor -d web code media graphics misc 
 
 #wallpaper
-feh --bg-fill ~/Pictures/wallpapers/board.png
+#feh --bg-fill ~/Pictures/wallpapers/board.png
+#feh --bg-fill ~/Pictures/wallpapers/board.png
+#feh --bg-fill ~/Pictures/wallpapers/board.png
+#feh --bg-fill ~/Pictures/wallpapers/board.png
+feh --bg-fill ~/Pictures/Wall/girl.png
+
+#resolution
 xrandr --output Virtual1 --mode 1366x768 
 
 #launch polybar
-#bash ~/.config/polybar/launch.sh  &
+sh ~/.config/polybar/grayblocks/launch.sh  &
 
 #dunst
 dunst -conf ~/.config/dust/dunstrc &
@@ -25,7 +31,7 @@ mpd &
 picom &
 
 #double border
-~/.config/bspwm/bin/bspborder
+sh ~/.config/bspwm/bin/bspborder
 
 bspc config border_width         0
 bspc config window_gap          4
@@ -33,6 +39,11 @@ bspc config window_gap          4
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
+
+#border
+bspc config focused_border_color "#FABD2F"
+bspc config normal_border_color "#928374"
+bspc config active_border_color "#83A598"
 
 bspc rule -a Gimp desktop='^8' state=floating follow=on
 bspc rule -a Chromium desktop='^2'
