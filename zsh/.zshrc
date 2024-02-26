@@ -191,11 +191,7 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:/home/sijirama/go/bin
-
-if [ -d ~/bin ] 
-then
-    export PATH=$PATH:~/bin
-fi
+export PATH=$PATH:~/bin
 
 
 
