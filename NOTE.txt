@@ -1,0 +1,8 @@
+the command i use to create the symlink is
+- assuming we want to create a symlink for neofetch from the ~/.config folder to the .dots folder
+``` bash
+
+    ln -s ~/.config/ranger  ~/.dots 
+
+``
+
