@@ -1,2 +1,6 @@
+#!/bin/bash
 
-pacman -S ranger bspwm rofi polybar picom kitty
+sudo apt install ranger kitty tmux neofetch 
+
+ln -s ~/.dots/tmux/.tmux.conf  ~/
+

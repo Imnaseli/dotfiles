@@ -116,6 +116,7 @@ export EDITOR='nvim'
   #INFO: directory aliases
   alias code="cd ~/Desktop/me/coder"
   alias neodots="cd ~/.config/nvim"
+  alias dots="cd ~/.dots"
 
   alias vim="vim -S https://raw.githubusercontent.com/sijirama/neodots/main/.vimrc"
   alias e="xdg-open ."
@@ -147,14 +148,18 @@ gac () {
     alias fman="compgen -c | fzf | xargs man"
 
 #INFO: Tmux aliases
+
 # List all tmux sessions
 alias tl='tmux list-sessions'
+
 # Attach to an existing tmux session
 alias ta='tmux attach -t'
-# Create a new tmux session
-alias tn='tmux new-session -s'
+
 # Kill a tmux session
 alias tk='tmux kill-session -t'
+
+# Create a new tmux session
+alias tn='tmux new-session -s'
 # Switch to a different tmux session
 alias tsw='tmux switch -t'
 # Kill a tmux session
