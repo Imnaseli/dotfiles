@@ -4,22 +4,15 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 #ZSH_THEME="mortalscumbag"
 #ZSH_THEME="jnrowe"
 #ZSH_THEME="half-life"
 #ZSH_THEME="amuse"
 #ZSH_THEME="af-magic"
-ZSH_THEME="random"
+#ZSH_THEME="fino-time"
+ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" "xiong-chiamiov" "af-magic" "mira" "fino-time" "fox" "gentoo" "candy" )
+ZSH_THEME="candy"
 
-# Set list of themes to pick from when loading at random
-# Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in $ZSH/themes/
-# If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" "xiong-chiamiov" "af-magic" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -152,28 +145,30 @@ gac () {
 # List all tmux sessions
 alias tl='tmux list-sessions'
 
+# Attach to last tmux session
+alias tal='tmux attach'
+
+
 # Attach to an existing tmux session
 alias ta='tmux attach -t'
 
 # Kill a tmux session
 alias tk='tmux kill-session -t'
 
-# Create a new tmux session
-alias tn='tmux new-session -s'
-# Switch to a different tmux session
-alias tsw='tmux switch -t'
 # Kill a tmux session
 alias tsk='tmux kill-session'
+
 # Create a new tmux window
 alias tw='tmux new-window'
+
 # Kill the current tmux window
 alias tkw='tmux kill-window'
+
 # Create a new tmux session
 alias tns='tmux new-session'
+
 # Lists all tmux windows in the current session
 alias tlw='tmux list-windows'
-# Start tmux
-alias tm='tmux'
 
 alias inflate='go run /home/sijirama/Desktop/me/coder/tools/inflator/main.go'
 
