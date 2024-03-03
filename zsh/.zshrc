@@ -99,83 +99,7 @@ export EDITOR='nvim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-  #INFO: some other cool ones
-  alias cls="clear"
-  alias rg="ranger"
-  alias nf="neofetch"
-  alias zc="nvim ~/.zshrc"
-  alias ls="ls -la --color"
-
-  #INFO: directory aliases
-  alias code="cd ~/Desktop/me/coder"
-  alias neodots="cd ~/.config/nvim"
-  alias dots="cd ~/.dots"
-
-  alias vim="vim -S https://raw.githubusercontent.com/sijirama/neodots/main/.vimrc"
-  alias e="xdg-open ."
-
-
-  #INFO: git aliases
-  alias gs='git status'
-  alias ga='git add .'
-  alias gp='git push'
-
- gitall() {
-    git add .
-    if [ "$1" != "" ] # or better, if [ -n "$1" ]
-    then
-        git commit -m "$1"
-    else
-        git commit -m update
-    fi
-    git push
-} 
-
-gac () {
-    git commit -m "$1"
-}
-
-
-    #INFO: cool aliases
-    alias mypwd="echo My current directory is $(pwd)"
-    alias fman="compgen -c | fzf | xargs man"
-
-#INFO: Tmux aliases
-
-# List all tmux sessions
-alias tl='tmux list-sessions'
-
-# Attach to last tmux session
-alias tal='tmux attach'
-
-
-# Attach to an existing tmux session
-alias ta='tmux attach -t'
-
-# Kill a tmux session
-alias tk='tmux kill-session -t'
-
-# Kill a tmux session
-alias tsk='tmux kill-session'
-
-# Create a new tmux window
-alias tw='tmux new-window'
-
-# Kill the current tmux window
-alias tkw='tmux kill-window'
-
-# Create a new tmux session
-alias tns='tmux new-session'
-
-# Lists all tmux windows in the current session
-alias tlw='tmux list-windows'
-
-alias inflate='go run /home/sijirama/Desktop/me/coder/tools/inflator/main.go'
-
-
-
-
-
+. ~/.bash_aliases
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -192,11 +116,4 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:/home/sijirama/go/bin
 export PATH=$PATH:~/bin
-
-
-
-
-
-
-
 
