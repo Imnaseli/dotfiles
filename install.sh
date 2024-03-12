@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt install ranger kitty tmux neofetch 
+apt install ranger kitty tmux NetworkManager neofetch ncdu
 
 ln -s ~/.dots/tmux/.tmux.conf  ~/
 

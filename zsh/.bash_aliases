@@ -11,7 +11,7 @@ alias ls="ls -la --color"
 alias code="cd ~/Desktop/me/coder"
 alias neodots="cd ~/.config/nvim"
 alias dots="cd ~/.dots"
-
+alias obsi="cd ~/Documents/blursidian"
 alias vim="vim -S https://raw.githubusercontent.com/sijirama/neodots/main/.vimrc"
 alias e="xdg-open ."
 

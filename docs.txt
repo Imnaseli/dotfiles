@@ -1,0 +1,2 @@
+Mar 12 16:12:38 pop NetworkManager[6909]: <error> [1710256358.4942] device (wlo1): Couldn't initialize supplicant interface: GDBus.Error:fi.w1.wpa_supplicant1.UnknownError: wpa_supplicant couldn't grab this interface.
+Mar 12 16:12:53 pop NetworkManager[6909]: <error> [1710256373.2337] device (wlo1): Couldn't initialize supplicant interface: GDBus.Error:fi.w1.wpa_supplicant1.UnknownError: wpa_supplicant couldn't grab this interface.
