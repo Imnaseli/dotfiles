@@ -1,1 +1,1 @@
-![home](./assets/home.png)
+![desktop page](./assets/desktop.png)
