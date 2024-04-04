@@ -116,4 +116,4 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:/home/sijirama/go/bin
 export PATH=$PATH:~/bin
-
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib 
