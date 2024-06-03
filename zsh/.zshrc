@@ -1,7 +1,7 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-source ~/startup.sh
+    source "$ZSH/oh-my-zsh.sh"
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -70,7 +70,19 @@ plugins=(
 	colored-man-pages
 )
 
-source $ZSH/oh-my-zsh.sh
+hostnames=("pathfinder" "gibraltar" "bangalore")
+
+# Get the current hostname
+current_hostname=$(hostname)
+
+# Check if the current hostname is in the array
+if [[ " ${hostnames[@]} " =~ " $current_hostname " ]]; then
+    source ~/startup.sh
+fi
+
+# if [[ "$hostname" !=  ]]; then
+# fi
+
 
 # User configuration
 
