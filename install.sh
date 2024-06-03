@@ -24,13 +24,22 @@ create_symlink() {
     fi
 }
 
+
+create_symlink "$DOTFILES_DIR/scripts/startup.sh" "$TARGET_DIR/startup.sh"
+
 # Create symbolic links for Neovim configuration
 echo "Creating symbolic links for Neovim configuration..."
 create_symlink "$DOTFILES_DIR/nvim" "$TARGET_DIR/.config/nvim"
 
 # Create symbolic links for tmux configuration
 echo "Creating symbolic links for tmux configuration..."
-create_symlink "$DOTFILES_DIR/tmux" "$TARGET_DIR/.tmux"
+create_symlink "$DOTFILES_DIR/tmux/.tmux.conf" "$TARGET_DIR/.tmux.conf"
+
+source ~/.tmux.conf
+
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+# type this in terminal if tmux is already running
+tmux source ~/.tmux.conf
 
 # Create symbolic links for other dotfiles
 echo "Creating symbolic links for other dotfiles..."
