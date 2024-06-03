@@ -1,11 +1,18 @@
+alias p="pnpm"
+
+#INFO: ssh
+[ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
+
 #INFO: weather
 alias weather="curl wttr.in/Lagos,Nigeria"
 
 alias cls="clear"
 alias rg="ranger"
+alias r="ranger"
 alias nf="neofetch"
 alias zc="nvim ~/.zshrc"
 alias ls="ls -la --color"
+alias home="cd ~"
 
 #INFO: directory aliases
 alias code="cd ~/Desktop/me/coder"
@@ -35,7 +42,8 @@ gitall() {
 } 
 
 gac () {
-    git commit -m "$1"
+    git add .
+    git commit -m "$*"
 }
 
 
