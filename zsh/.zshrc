@@ -4,7 +4,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-source "$ZSH/oh-my-zsh.sh"
 
 #ZSH_THEME="mortalscumbag"
 #ZSH_THEME="jnrowe"
@@ -70,6 +69,8 @@ plugins=(
 	colored-man-pages
 )
 
+
+
 hostnames=("pathfinder" "gibraltar" "bangalore")
 
 # Get the current hostname
@@ -79,6 +80,9 @@ current_hostname=$(hostname)
 if [[ " ${hostnames[@]} " =~ " $current_hostname " ]]; then
     source ~/startup.sh
 fi
+
+
+source "$ZSH/oh-my-zsh.sh"
 
 # if [[ "$hostname" !=  ]]; then
 # fi
