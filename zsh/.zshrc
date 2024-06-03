@@ -117,3 +117,5 @@ export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:/home/sijirama/go/bin
 export PATH=$PATH:~/bin
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib 
+
+export PATH=$PATH:/home/sijirama/.spicetify
