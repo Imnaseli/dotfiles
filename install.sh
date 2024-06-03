@@ -55,5 +55,5 @@ fi
 echo "Sourcing .zshrc..."
 source "$HOME/.zshrc"
 
-echo "Setup completed successfully."
+echo "Setup completed successfull thanks God now."
 
