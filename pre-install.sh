@@ -4,8 +4,8 @@
 sudo apt update
 
 # Install required packages
-echo "Installing tmux, neovim, zsh, and ranger..."
-sudo apt install -y tmux neovim zsh ranger
+echo "Installing tmux, zsh, and ranger..."
+sudo apt install -y tmux zsh ranger fzf ninja-build gettext cmake unzip curl build-essential
 
 echo "gh cli for login"
 (type -p wget >/dev/null || (sudo apt update && sudo apt-get install wget -y)) \
@@ -17,10 +17,8 @@ echo "gh cli for login"
 && sudo apt install gh -y
 
 # Download and install Neovim pre-built binaries
-echo "Downloading and installing Neovim pre-built binaries..."
-curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
-sudo rm -rf /opt/nvim
-sudo tar -C /opt -xzf nvim-linux64.tar.gz
+chmod +x install_neovim.sh
+./install_neovim.sh
 
 # Add Neovim binary directory to PATH
 echo "Adding Neovim binary directory to PATH..."
@@ -33,6 +31,10 @@ sudo chsh -s $(which zsh)
 # Install Oh My Zsh
 echo "Installing Oh My Zsh..."
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+echo "Installing zsh-autosuggestions and zsh-syntax-highlighting"
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 
 # Confirm shell change
 echo "Current shell:"

@@ -119,3 +119,7 @@ export PATH=$PATH:~/bin
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib 
 export PATH=$PATH:/home/sijirama/.spicetify
 export FZF_BASE=/path/to/fzf/install/dir
+export PATH="$PATH:/opt/nvim-linux64/bin"
+export PATH="$PATH:/opt/nvim-linux64/bin"
+export PATH="$PATH:/usr/local/bin"
+export PATH="$PATH:/opt/nvim-linux64/bin"

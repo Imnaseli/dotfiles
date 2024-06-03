@@ -26,7 +26,7 @@ create_symlink() {
 
 # Create symbolic links for Neovim configuration
 echo "Creating symbolic links for Neovim configuration..."
-create_symlink "$DOTFILES_DIR/neovim" "$TARGET_DIR/.config/nvim"
+create_symlink "$DOTFILES_DIR/nvim" "$TARGET_DIR/.config/nvim"
 
 # Create symbolic links for tmux configuration
 echo "Creating symbolic links for tmux configuration..."
