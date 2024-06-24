@@ -1,4 +1,0 @@
-Host pathfinder
-    HostName 91.134.166.26
-    User root
-    IdentityFile ~/.ssh/pathfinder_key
