@@ -50,6 +50,7 @@ gac () {
 #INFO: cool aliases
 alias mypwd="echo My current directory is $(pwd)"
 alias fman="compgen -c | fzf | xargs man"
+alias checkports="sudo ss -tulpn"
 
 #INFO: Tmux aliases
 
