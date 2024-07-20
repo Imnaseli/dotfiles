@@ -1,5 +1,9 @@
 alias p="pnpm"
 
+
+alias inv='nvim $(fzf -m --preview "bat --color=always --style=numbers --line-range=:500 {}")'
+alias cat='bat'
+
 #INFO: ssh
 [ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
 
