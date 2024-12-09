@@ -104,6 +104,7 @@ source "$ZSH/oh-my-zsh.sh"
 
 #NOTE: default editor
 export EDITOR='nvim'
+export ODIN_ROOT='/home/sijirama/bin/odin'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -132,9 +133,13 @@ export BUN_INSTALL="$HOME/.bun"
 # INFO: path
 export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH=$PATH:/usr/local/go/bin
+export PATH="$PATH:/usr/local"
+export PATH="$PATH:/usr/local/odin"
 export PATH=$PATH:/home/.local/bin
 export PATH=$PATH:/home/sijirama/go/bin
 export PATH=$PATH:~/bin
+export PATH=$PATH:~/bin/odin
+export PATH=$PATH:~/bin/zig
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib 
 export PATH=$PATH:/home/sijirama/.spicetify
 export FZF_BASE=/path/to/fzf/install/dir
@@ -142,3 +147,4 @@ export PATH="$PATH:/opt/nvim-linux64/bin"
 export PATH="$PATH:/opt/nvim-linux64/bin"
 export PATH="$PATH:/usr/local/bin"
 export PATH="$PATH:/opt/nvim-linux64/bin"
+

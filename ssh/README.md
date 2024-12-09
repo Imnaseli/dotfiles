@@ -25,7 +25,7 @@ This guide explains how to set up SSH keys for passwordless authentication and c
 ## Step 2: Copy Public Key to Remote Computer
 
 1. Copy the public key to the remote computer using the following command:
-   `ssh-copy-id -i ~/.ssh/key_name.pub user@remote_host`
+   `ssh-copy-id -i ~/.ssh/key_name.pub port user@remote_host`
    Replace `key_name.pub` with the name of your public key file, `user` with the username on the remote computer, and `remote_host` with the IP address or hostname of the remote computer.
 
 2. You will be prompted to enter the password for the user on the remote computer. After entering the password, the public key will be copied to the remote computer's `authorized_keys` file.

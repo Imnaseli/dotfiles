@@ -1,8 +1,13 @@
 alias p="pnpm"
+alias br="bun run"
+alias zbr="zig build run"
 
+alias fucking="sudo"
 
 alias inv='nvim $(fzf -m --preview "bat --color=always --style=numbers --line-range=:500 {}")'
 alias cat='bat'
+
+alias py='python3'
 
 #INFO: ssh
 [ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
@@ -17,6 +22,8 @@ alias nf="neofetch"
 alias zc="nvim ~/.zshrc"
 alias ls="ls -la --color"
 alias home="cd ~"
+
+alias cpc="xclip -sel c < "
 
 #INFO: directory aliases
 alias code="cd ~/Desktop/me/coder"
@@ -81,3 +88,5 @@ alias tkw='tmux kill-window'
 
 # Create a new tmux session
 alias tns='tmux new-session'
+
+export MANPAGER='nvim +Man!'
