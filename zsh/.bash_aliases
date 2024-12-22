@@ -8,6 +8,7 @@ alias inv='nvim $(fzf -m --preview "bat --color=always --style=numbers --line-ra
 alias cat='bat'
 
 alias py='python3'
+alias zshrc='nvim ~/.zshrc'
 
 #INFO: ssh
 [ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
