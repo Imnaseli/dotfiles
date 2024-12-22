@@ -10,6 +10,10 @@ alias cat='bat'
 alias py='python3'
 alias zshrc='nvim ~/.zshrc'
 
+alias runningproc='ps aux --sort=-%cpu | head -n 6'
+
+
+
 #INFO: ssh
 [ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
 
